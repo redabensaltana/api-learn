@@ -1,7 +1,7 @@
 <?php
 
-header('Access-Control-Allow-Origin: *');
-header('Content-Type: application/json');
+header('Access-Control-Allow-Origin: *');//make the api public
+header('Content-Type: application/json');//use json format
 
 include_once '../../db/Connection.php';
 include_once '../../models/games.php';
@@ -28,7 +28,6 @@ $num = $result->rowCount();
              'id' => $id,
              'name' => $name,
              'genre' => $genre,
-             'autor' => $autor,
              'autor' => $autor,
              'release_date' => $release_date,
          );

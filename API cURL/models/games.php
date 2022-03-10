@@ -26,7 +26,7 @@ class Game{
 
     //add record
     public function addgame(){
-        $query = "INSERT INTO" . $this->table . "SET name = :name, genre = :genre, autor = :autor, release_date = :release_date";
+        $query = "INSERT INTO " . $this->table . " SET name = :name, genre = :genre, autor = :autor, release_date = :release_date";
         $stmt = $this->conn->prepare($query);
 
         //binding
