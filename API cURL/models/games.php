@@ -17,7 +17,7 @@ class Game{
 
     //get all
     public function getgames(){
-        $query = 'SELECT id , name , genre , autor , release_date FROM ;' . $this->table . ""; 
+        $query = 'SELECT * FROM ' . $this->table; 
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
         
